@@ -109,7 +109,7 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home_title">Hi, I'am Mahesh</h1>
+                        <h1 class="home__title">Hi, I'am Mahesh</h1>
                         <h3 class="home__subtitle">Java developer</h3>
                         <p class="home__description">Results-oriented Java Developer adept at translating complex
                             challenges into innovative software. Experienced in the full development lifecycle,
@@ -136,7 +136,7 @@
             <span class="section__subtitle">My introduction</span>
 
             <div class="about__container container grid">
-                <img src="assets/img/" alt="wait.." class="about__img">
+                <img src="assets/img/about.jpg" alt="wait.." class="about__img">
 
                 <div class="about__data">
                     <p class="about__description">Hi there! I’m a Computer Engineering graduate with a love for all
@@ -169,7 +169,7 @@
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/Mahesh_Resume.pdf" class="button button-flex">
+                        <a download="" href="assets/pdf/Mahesh_Resume.pdf" class="button button--flex">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -522,15 +522,19 @@
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
                         <h3 class="services__title">Ui/Ux <br> Designer</h3>
-                        <span class="button button--flex button--small button--link services__button">
+                        <button type="button" class="button button--flex button--small button--link services__button"
+                            aria-haspopup="dialog" aria-controls="service-modal-1">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
+                        </button>
 
-                        <div class="services__modal">
+                        <div class="services__modal" id="service-modal-1" role="dialog" aria-modal="true"
+                            aria-hidden="true">
+                            <button class="services__modal-close" aria-label="Close dialog">
+                                <i class="uil uil-times" aria-hidden="true"></i>
+                            </button>
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Ui/ux <br> designer</h4>
-                                <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="servvices__modal-services grid">
                                     <li class="services__modal-service">
@@ -561,15 +565,19 @@
                         <i class="uil uil-arrow services__icon"></i>
                         <h3 class="services__title">Fronted <br> Developer</h3>
 
-                        <span class="button button--flex button--small button--link services__button">
+                        <button type="button" class="button button--flex button--small button--link services__button"
+                            aria-haspopup="dialog" aria-controls="service-modal-2">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
+                        </button>
 
-                        <div class="services__modal">
+                        <div class="services__modal" id="service-modal-2" role="dialog" aria-modal="true"
+                            aria-hidden="true">
+                            <button class="services__modal-close" aria-label="Close dialog">
+                                <i class="uil uil-times" aria-hidden="true"></i>
+                            </button>
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">frontend <br> developer</h4>
-                                <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="servvices__modal-services grid">
                                     <li class="services__modal-service">
@@ -599,15 +607,19 @@
                     <div>
                         <i class="uil uil-pen services__icon"></i>
                         <h3 class="services__title">backend <br> developer</h3>
-                        <span class="button button--flex button--small button--link services__button">
+                        <button type="button" class="button button--flex button--small button--link services__button"
+                            aria-haspopup="dialog" aria-controls="service-modal-3">
                             View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
+                            <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
+                        </button>
 
-                        <div class="services__modal">
+                        <div class="services__modal" id="service-modal-3" role="dialog" aria-modal="true"
+                            aria-hidden="true">
+                            <button class="services__modal-close" aria-label="Close dialog">
+                                <i class="uil uil-times" aria-hidden="true"></i>
+                            </button>
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">backend <br> developer</h4>
-                                <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="servvices__modal-services grid">
                                     <li class="services__modal-service">
@@ -644,7 +656,8 @@
                 <div class="swiper-wrapper">
                     <!-- portfolio 1 -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                        <img src="assets/img/portfolio1.jpg" alt="Modern website screenshot" class="portfolio__img"
+                            loading="lazy">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Mordern Website</h3>
@@ -658,7 +671,8 @@
                     </div>
                     <!-- portfolio 2 -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                        <img src="assets/img/portfolio2.jpg" alt="Brand design screenshot" class="portfolio__img"
+                            loading="lazy">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Brand Design</h3>
@@ -672,7 +686,8 @@
                     </div>
                     <!-- portfolio 3 -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                        <img src="assets/img/portfolio3.jpg" alt="Digital clock app screenshot" class="portfolio__img"
+                            loading="lazy">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Digital Clock</h3>
@@ -845,29 +860,36 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="" class="contact__form grid" id="contact-form" novalidate>
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="contact-name" class="contact__label">Name</label>
+                            <input id="contact-name" type="text" class="contact__input" placeholder="Your name"
+                                aria-required="true">
+                            <div class="contact__error" id="error-name" aria-live="polite"></div>
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <label for="contact-email" class="contact__label">Email</label>
+                            <input id="contact-email" type="email" class="contact__input" placeholder="your@email.com"
+                                aria-required="true">
+                            <div class="contact__error" id="error-email" aria-live="polite"></div>
                         </div>
                     </div>
 
                     <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="contact-message" class="contact__label">Message</label>
+                        <textarea id="contact-message" name="" cols="0" rows="7" class="contact__input"
+                            placeholder="Tell me about your project..." aria-required="true"></textarea>
+                        <div class="contact__error" id="error-message" aria-live="polite"></div>
                     </div>
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button type="submit" class="button button--flex contact__send" aria-label="Send message">
                             Send Message
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
+                            <i class="uil uil-message button__icon" aria-hidden="true"></i>
+                        </button>
                     </div>
+                    <div id="contact-toast" class="contact__toast" role="status" aria-live="polite"></div>
                 </form>
             </div>
         </section>
